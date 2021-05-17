@@ -10,7 +10,7 @@ git add (filename)
 #commit changes with a short commit message
 git commit -m "message"
 
-#commit changes with a longer commit message (prompt)
+#commit changed files
 git commit -a
 
 #push changes to branch
