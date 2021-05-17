@@ -1,2 +1,3 @@
-# ps_snippets
-Useful simple Powershell snippets
+# Cheat Sheets
+
+Useful commands, etc
