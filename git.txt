@@ -1,3 +1,9 @@
+#clone repo
+git clone (repo URL from github)
+
+#Pull repo and rebase existing files
+git pull --rebase
+
 #Add file to git commit
 git add (filename)
 
