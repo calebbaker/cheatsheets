@@ -1,0 +1,6 @@
+#Add file to git commit
+git add (filename)
+
+git commit -m "message"
+
+

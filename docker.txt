@@ -1,0 +1,51 @@
+#Pull container image from DockerHub and executer with default command (runs attached)
+docker run (containter)
+
+#Pull container image from DockerHub and executer with alternate command
+docker run (containter) (command)
+
+#Pull container image from DockerHub (outputs container id)
+docker create
+
+#Run container from local repository
+docker start (continer id)
+
+#Run container from local repository, attach to output
+docker start (continer id) -a
+
+#list running docker containers
+docker ps
+
+#list all containers that have run
+docker ps --all
+
+#remove all non-runing containers from cache
+docker system prune
+
+#show output from previously run container
+docker logs (container id)
+
+docker stop (container id)
+
+docker kill (container id)
+
+#Run command interactively in running container
+docker exec -it (container id) (command)
+
+#Run shell in container
+docker run -it (container name) sh
+
+#
+Dockerfile
+FROM (base image)
+WORKDIR (path in container)					-OPTIONAL
+COPY (path on host) (path in container)		-OPTIONAL
+RUN (commands)
+CMD (startup commands)
+
+
+docker build (Dockerfile directory)
+
+docker build -t calebbaker/(image tag) (Dockerfile directory)
+
+docker run -p (local port):(container port) (iamge id/name)
