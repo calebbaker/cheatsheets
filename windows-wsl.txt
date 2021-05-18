@@ -1,0 +1,39 @@
+# https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+#Windows 1909 or later required
+
+#Enable Windows Subsystem for Linux
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+#Enable Virtual Machine Platform for WSL2
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+#Install WSL kernel update
+https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+#REBOOT
+
+#set default version for wsl containers
+wsl --set-default-version 2
+
+#
+# Install desired WSL disto(s) from Windows store (ewww)
+#
+
+
+
+#show installed WSL distros
+wsl --set-default-version 2
+
+#upgrade distro from v1 to v2:
+wsl --set-version Ubuntu-20.04 2
+
+##reset root password (ubuntu example) - run in windows shell
+
+ubuntu config --default-user root
+
+#now run wsl, running as root, and change default user password
+
+#change back to old user password
+ubuntu config --default-user (old default username)
+
