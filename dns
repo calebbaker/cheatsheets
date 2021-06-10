@@ -1,0 +1,6 @@
+#Lookup MX records
+nslookup -type=mx example.com
+
+#lookup DMARC record
+nslookup -type=txt _dmarc.example.com
+
