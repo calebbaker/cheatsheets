@@ -1,0 +1,2 @@
+#Windows Sandbox - requires Win10 Pro/Ent
+Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online
